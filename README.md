@@ -8,6 +8,8 @@ The system uses semantic search with FAISS and HuggingFace embeddings to retriev
 
 Unlike a traditional chatbot, the application answers only from the provided documents, reducing hallucinations and improving factual accuracy.
 
+Live Demo Link: https://rag-question-answering-system-zvx6wkdjdpmm4ufflbenqc.streamlit.app/
+
 ---
 
 ## ✨ Features
@@ -225,29 +227,54 @@ This significantly improves factual grounding compared to a standard chatbot.
 
 ---
 
-## ▶️ Installation
+## ⚙️ Installation & Setup
 
-### Clone Repository
+### 1. Clone the Repository
 
-git clone <your-repository-url>
-
+```bash
+git clone https://github.com/AdityaSharma1325/Rag-Question-Answering-System.git
 cd Rag-Question-Answering-System
+```
 
-### Install Dependencies
+### 2. Create a Virtual Environment (Recommended)
 
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-### Configure Environment Variables
+### 4. Configure Environment Variables
 
-Create a .env file:
+Create a `.env` file in the project root:
 
-MISTRAL_API_KEY=YOUR_API_KEY
+```env
+MISTRAL_API_KEY=YOUR_MISTRAL_API_KEY
+```
 
-### Run Application
+### 5. Run the Application
 
+```bash
 streamlit run app.py
+```
 
----
+### 6. Open the link to view app
+
+```text
+https://rag-question-answering-system-zvx6wkdjdpmm4ufflbenqc.streamlit.app/
+```
 
 ## 👨‍💻 Author
 
